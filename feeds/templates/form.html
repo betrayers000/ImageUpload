@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+  <form action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+    <input class="form-control mt-3" type="text" name="content">
+    <input class="form-control mt-1" type="file" name="image">
+    <input class="btn btn-primary mt-1" type="submit">
+  </form>
+{% endblock %}
